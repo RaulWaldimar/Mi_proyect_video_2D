@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: a01fa77fc70f5f449ac20aa2766fdc75
+guid: 1273d1c9bb29c7d4fb1af80aa25d751e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6045110389800113485
-    second: 1_Cat_Idle-Sheet_0
+      213: 8698305717160559983
+    second: 3_Cat_Jump-Sheet_0
   - first:
-      213: 694643036356670052
-    second: 1_Cat_Idle-Sheet_1
+      213: -879127403827390100
+    second: 3_Cat_Jump-Sheet_1
   - first:
-      213: 8899071560039492307
-    second: 1_Cat_Idle-Sheet_2
+      213: -1717004097415697048
+    second: 3_Cat_Jump-Sheet_2
   - first:
-      213: 1382243940659527871
-    second: 1_Cat_Idle-Sheet_3
-  - first:
-      213: 1741714163069081642
-    second: 1_Cat_Idle-Sheet_4
-  - first:
-      213: -7324712250782580542
-    second: 1_Cat_Idle-Sheet_5
-  - first:
-      213: 208954994888524968
-    second: 1_Cat_Idle-Sheet_6
-  - first:
-      213: -5023069392592586964
-    second: 1_Cat_Idle-Sheet_7
+      213: 7718173357589714328
+    second: 3_Cat_Jump-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,17 +107,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_Cat_Idle-Sheet_0
+      name: 3_Cat_Jump-Sheet_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 8
         y: 3
-        width: 15
-        height: 20
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3bae0fbf0247b1ca0800000000000000
-      internalID: -6045110389800113485
+      spriteID: f65ca13d6f696b870800000000000000
+      internalID: 8698305717160559983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_Cat_Idle-Sheet_1
+      name: 3_Cat_Jump-Sheet_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 40
         y: 3
-        width: 15
-        height: 20
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 462fcb3492ed3a900800000000000000
-      internalID: 694643036356670052
+      spriteID: c699e86b846bcc3f0800000000000000
+      internalID: -879127403827390100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_Cat_Idle-Sheet_2
+      name: 3_Cat_Jump-Sheet_2
       rect:
         serializedVersion: 2
-        x: 71
+        x: 73
         y: 3
-        width: 15
-        height: 20
+        width: 12
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3da6fee3f6adf7b70800000000000000
-      internalID: 8899071560039492307
+      spriteID: 86da5a7ded9fb28e0800000000000000
+      internalID: -1717004097415697048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_Cat_Idle-Sheet_3
+      name: 3_Cat_Jump-Sheet_3
       rect:
         serializedVersion: 2
-        x: 103
+        x: 104
         y: 3
-        width: 15
-        height: 20
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,96 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb082f36a87be2310800000000000000
-      internalID: 1382243940659527871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_Cat_Idle-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 3
-        width: 15
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a28dff5adcfcb2810800000000000000
-      internalID: 1741714163069081642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_Cat_Idle-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 3
-        width: 15
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c007221405695a90800000000000000
-      internalID: -7324712250782580542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_Cat_Idle-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 3
-        width: 15
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8a4cf54f57b56e200800000000000000
-      internalID: 208954994888524968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_Cat_Idle-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 3
-        width: 16
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c27b16430097a4ab0800000000000000
-      internalID: -5023069392592586964
+      spriteID: 895d40ea6c57c1b60800000000000000
+      internalID: 7718173357589714328
       vertices: []
       indices: 
       edges: []
@@ -312,14 +225,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1_Cat_Idle-Sheet_0: -6045110389800113485
-      1_Cat_Idle-Sheet_1: 694643036356670052
-      1_Cat_Idle-Sheet_2: 8899071560039492307
-      1_Cat_Idle-Sheet_3: 1382243940659527871
-      1_Cat_Idle-Sheet_4: 1741714163069081642
-      1_Cat_Idle-Sheet_5: -7324712250782580542
-      1_Cat_Idle-Sheet_6: 208954994888524968
-      1_Cat_Idle-Sheet_7: -5023069392592586964
+      3_Cat_Jump-Sheet_0: 8698305717160559983
+      3_Cat_Jump-Sheet_1: -879127403827390100
+      3_Cat_Jump-Sheet_2: -1717004097415697048
+      3_Cat_Jump-Sheet_3: 7718173357589714328
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
