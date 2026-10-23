@@ -205,6 +205,11 @@ Transform:
   - {fileID: 1135146545}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &204312702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3781834910948334700, guid: a00a064412e14db4fb6ea098fe082138, type: 3}
+  m_PrefabInstance: {fileID: 1135146544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &324877894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1798,7 +1803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SeguirCamara
   objetivo: {fileID: 1921440306}
   suavidad: 5
-  desfase: {x: 0, y: 1, z: -10}
+  desfaseX: 0
 --- !u!1 &538323041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2887,13 +2892,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3781834910948334700, guid: a00a064412e14db4fb6ea098fe082138, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1135146550}
   m_SourcePrefab: {fileID: 100100000, guid: a00a064412e14db4fb6ea098fe082138, type: 3}
 --- !u!4 &1135146545 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7718268727416766816, guid: a00a064412e14db4fb6ea098fe082138, type: 3}
   m_PrefabInstance: {fileID: 1135146544}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1135146550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204312702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf902fa01c2e7fd4d885c1257593b8c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PatrullaEnemigo
+  velocidad: 2
+  distancia: 3
 --- !u!1 &1167599518
 GameObject:
   m_ObjectHideFlags: 0
