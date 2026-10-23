@@ -4,12 +4,25 @@ public class SeguirCamara : MonoBehaviour
 {
     public Transform objetivo;
     public float suavidad = 5f;
-    public Vector3 desfase = new Vector3(0f, 1f, -10f);
+    public float desfaseX = 0f;
+
+    private float alturaFija;
+    private float profundidadFija;
+
+    void Start()
+    {
+        // Guarda la altura y profundidad que ya tiene la camara
+        alturaFija = transform.position.y;
+        profundidadFija = transform.position.z;
+    }
 
     void LateUpdate()
     {
         if (objetivo == null) return;
-        Vector3 destino = objetivo.position + desfase;
-        transform.position = Vector3.Lerp(transform.position, destino, suavidad * Time.deltaTime);
+
+        float destinoX = objetivo.position.x + desfaseX;
+        float nuevaX = Mathf.Lerp(transform.position.x, destinoX, suavidad * Time.deltaTime);
+
+        transform.position = new Vector3(nuevaX, alturaFija, profundidadFija);
     }
 }
