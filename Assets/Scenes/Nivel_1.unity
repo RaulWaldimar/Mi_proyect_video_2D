@@ -1658,6 +1658,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1783,6 +1784,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 318269e56603794478170f2c381308e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SeguirCamara
+  objetivo: {fileID: 1921440306}
+  suavidad: 5
+  desfase: {x: 0, y: 1, z: -10}
 --- !u!1 &538323041
 GameObject:
   m_ObjectHideFlags: 0
@@ -17946,11 +17962,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2e09b05a844d644bb2b47f9339ff5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovimientoGato
+  puntoPies: {fileID: 3845525433267725756}
   velocidad: 5
   fuerzaSalto: 6
   capaSuelo:
     serializedVersion: 2
     m_Bits: 8
+--- !u!4 &1921440306 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2000159028062882411, guid: ac9333f3ece17d3458811681b7a36c3f, type: 3}
+  m_PrefabInstance: {fileID: 5608581212587724340}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &674106784677671154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3845525433267725756}
+  m_Layer: 0
+  m_Name: PuntoPies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3845525433267725756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674106784677671154}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.091, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1921440306}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5608581212587724340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17959,17 +18012,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 525561751808248507, guid: ac9333f3ece17d3458811681b7a36c3f, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 525561751808248507, guid: ac9333f3ece17d3458811681b7a36c3f, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1263993647331005722, guid: ac9333f3ece17d3458811681b7a36c3f, type: 3}
       propertyPath: m_Name
       value: Cat_Play
       objectReference: {fileID: 0}
     - target: {fileID: 2000159028062882411, guid: ac9333f3ece17d3458811681b7a36c3f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.63
+      value: 1.02
       objectReference: {fileID: 0}
     - target: {fileID: 2000159028062882411, guid: ac9333f3ece17d3458811681b7a36c3f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.21
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 2000159028062882411, guid: ac9333f3ece17d3458811681b7a36c3f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18009,7 +18070,10 @@ PrefabInstance:
       objectReference: {fileID: 6200000, guid: 5b45391d81aa91441b9895b1df7df1a7, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2000159028062882411, guid: ac9333f3ece17d3458811681b7a36c3f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3845525433267725756}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1263993647331005722, guid: ac9333f3ece17d3458811681b7a36c3f, type: 3}
       insertIndex: -1

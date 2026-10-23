@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class MovimientoGato : MonoBehaviour
 {
+
+    public Transform puntoPies;
     public float velocidad = 5f;
     public float fuerzaSalto = 10f;
     public LayerMask capaSuelo;   // Aquí eliges la capa del suelo
@@ -49,9 +51,7 @@ public class MovimientoGato : MonoBehaviour
 
     bool EstaEnSuelo()
     {
-        Bounds b = col.bounds;
-        RaycastHit2D hit = Physics2D.BoxCast(
-            b.center, b.size, 0f, Vector2.down, 0.1f, capaSuelo);
-        return hit.collider != null;
+        return Physics2D.OverlapBox(
+            puntoPies.position, new Vector2(0.3f, 0.1f), 0f, capaSuelo);
     }
 }
