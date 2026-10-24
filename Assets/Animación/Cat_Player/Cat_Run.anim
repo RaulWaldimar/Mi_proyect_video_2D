@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Gato_Idle
+  m_Name: Cat_Run
   serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2698658137309289751, guid: 13b5383eac335344ebbe21b673e37763, type: 3}
+      value: {fileID: -2980455036323118514, guid: 13b5383eac335344ebbe21b673e37763, type: 3}
     - time: 0.083333336
       value: {fileID: 3347968482685306840, guid: 13b5383eac335344ebbe21b673e37763, type: 3}
     - time: 0.16666667
@@ -63,7 +63,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     pptrCurveMapping:
-    - {fileID: -2698658137309289751, guid: 13b5383eac335344ebbe21b673e37763, type: 3}
+    - {fileID: -2980455036323118514, guid: 13b5383eac335344ebbe21b673e37763, type: 3}
     - {fileID: 3347968482685306840, guid: 13b5383eac335344ebbe21b673e37763, type: 3}
     - {fileID: 3049066074964071776, guid: 13b5383eac335344ebbe21b673e37763, type: 3}
     - {fileID: -2980455036323118514, guid: 13b5383eac335344ebbe21b673e37763, type: 3}
