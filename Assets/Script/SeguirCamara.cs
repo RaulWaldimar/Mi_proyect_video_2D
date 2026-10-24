@@ -5,8 +5,8 @@ public class SeguirCamara : MonoBehaviour
     public Transform objetivo;
     public float suavidad = 5f;
     public float desfaseX = 0f;
-    public float limiteIzquierdo = 0f;
-    public float limiteDerecho = 50f;
+    public float limiteIzquierdo = 7f;
+    public float limiteDerecho = 210f;
 
     private float alturaFija;
     private float profundidadFija;
