@@ -11,6 +11,7 @@ public class PatrullaEnemigo : MonoBehaviour
     public float rangoAtaque = 1.2f;           // Distancia horizontal a la que ataca al gato
     public float alturaAtaque = 1f;            // Diferencia de altura maxima para atacar
     public float esperaEntreAtaques = 1f;      // Cada cuantos segundos hace dano
+    public int danio = 10;                     // Vida que le quita al gato en cada ataque
 
     [Header("Muerte")]
     public float fuerzaRebote = 8f;            // Impulso que recibe el gato al pisar al enemigo
@@ -25,6 +26,7 @@ public class PatrullaEnemigo : MonoBehaviour
     private Rigidbody2D rb;
     private MovimientoGato gato;
     private Collider2D gatoCollider;
+    private VidaCat_Player vidaGato;
     private bool muerto;
     private float proximoAtaque;
 
@@ -34,8 +36,12 @@ public class PatrullaEnemigo : MonoBehaviour
         anim = GetComponent<Animator>();
         miCollider = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
-        gato = FindFirstObjectByType<MovimientoGato>();
-        if (gato != null) gatoCollider = gato.GetComponent<Collider2D>();
+        gato = FindAnyObjectByType<MovimientoGato>();
+        if (gato != null)
+        {
+            gatoCollider = gato.GetComponent<Collider2D>();
+            vidaGato = gato.GetComponent<VidaCat_Player>();
+        }
 
         limiteIzquierdo = transform.position.x - distancia;
         limiteDerecho = transform.position.x + distancia;
@@ -58,8 +64,7 @@ public class PatrullaEnemigo : MonoBehaviour
             if (Time.time >= proximoAtaque)
             {
                 proximoAtaque = Time.time + esperaEntreAtaques;
-                // Aqui luego se le quitara vida al gato
-                Debug.Log("El gato recibe daño");
+                if (vidaGato != null) vidaGato.RecibirDanio(danio);
             }
             return;   // Mientras ataca no patrulla
         }
