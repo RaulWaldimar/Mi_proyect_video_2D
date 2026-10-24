@@ -150,7 +150,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -175,9 +175,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovimientoGato
   puntoPies: {fileID: 8188943414352613404}
-  velocidad: 5
-  fuerzaSalto: 5
+  velocidad: 6
+  fuerzaSalto: 7.5
+  fuerzaDobleSalto: 6.8
   maxSaltos: 2
+  escalaGravedad: 1.8
+  multiplicadorCaida: 1.4
   capaSuelo:
     serializedVersion: 2
     m_Bits: 8
