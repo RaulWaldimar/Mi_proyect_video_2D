@@ -5,6 +5,8 @@ public class SeguirCamara : MonoBehaviour
     public Transform objetivo;
     public float suavidad = 5f;
     public float desfaseX = 0f;
+    public float limiteIzquierdo = 0f;
+    public float limiteDerecho = 50f;
 
     private float alturaFija;
     private float profundidadFija;
@@ -22,6 +24,8 @@ public class SeguirCamara : MonoBehaviour
 
         float destinoX = objetivo.position.x + desfaseX;
         float nuevaX = Mathf.Lerp(transform.position.x, destinoX, suavidad * Time.deltaTime);
+
+        nuevaX = Mathf.Clamp(nuevaX, limiteIzquierdo, limiteDerecho);
 
         transform.position = new Vector3(nuevaX, alturaFija, profundidadFija);
     }

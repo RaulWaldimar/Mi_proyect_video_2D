@@ -1879,6 +1879,8 @@ MonoBehaviour:
   objetivo: {fileID: 1921440306}
   suavidad: 5
   desfaseX: 0
+  limiteIzquierdo: 7
+  limiteDerecho: 210
 --- !u!1 &538323041
 GameObject:
   m_ObjectHideFlags: 0

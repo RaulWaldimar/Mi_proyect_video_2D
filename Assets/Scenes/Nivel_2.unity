@@ -13145,6 +13145,8 @@ MonoBehaviour:
   objetivo: {fileID: 566232537}
   suavidad: 5
   desfaseX: 0
+  limiteIzquierdo: 5
+  limiteDerecho: 321
 --- !u!4 &566232537 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2000159028062882411, guid: ac9333f3ece17d3458811681b7a36c3f, type: 3}
