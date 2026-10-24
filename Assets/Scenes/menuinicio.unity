@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 433928307}
   - component: {fileID: 433928306}
   - component: {fileID: 433928305}
-  - component: {fileID: 433928309}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -223,18 +222,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &433928309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433928304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e27255f03e20694b9679dbe07a87f6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &756656716
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,9 +521,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 433928309}
+      - m_Target: {fileID: 11500000, guid: 9d605e343183f244f8546b647928c60e, type: 3}
         m_TargetAssemblyTypeName: menuinicial, Assembly-CSharp
-        m_MethodName: salir
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -596,7 +583,7 @@ GameObject:
   - component: {fileID: 1324669565}
   - component: {fileID: 1324669564}
   m_Layer: 5
-  m_Name: menuinicial
+  m_Name: mennuinicial1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -836,9 +823,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 433928309}
+      - m_Target: {fileID: 11500000, guid: 9d605e343183f244f8546b647928c60e, type: 3}
         m_TargetAssemblyTypeName: menuinicial, Assembly-CSharp
-        m_MethodName: jugar
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
